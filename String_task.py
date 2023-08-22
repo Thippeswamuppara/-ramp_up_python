@@ -33,6 +33,11 @@ class String_Task():
         l1=[i for i in enumerate(split_statemnt)]
         return "total words in a given statement: {}".format(l1[-1][0]+1)
 
+    def Find_duplicate_words_from_statement(self):
+        statement=self.statement
+        data=statement.split()
+
+
     def revese_the_character_present_in_the_statement(self):
         reverse_characters=[]
         [reverse_characters.insert(0,i) for i in self.statement]
@@ -44,6 +49,7 @@ class String_Task():
 
         revers_the_words= " ".join(reverse_word)
         return revers_the_words
+
 
     def Create_or_form_new_statement_from_existing_revese_words(self):
         #call the function which is have revese words
@@ -80,6 +86,11 @@ duplicate_character_in_statement=obj.Findout_total_number_of_duplicate_Character
 #find out total words present in the given statement
 
 total_words_in_given_statement=obj.find_total_words_present_in_given_statement()
+
+#find out duplicate words from given statement
+dupicate_words=obj.Find_duplicate_words_from_statement()
+print(dupicate_words)
+
 #print(total_words_in_given_statement)
 #reverse the characters present in statement
 #reverse_the_characters=obj.revese_the_character_present_in_the_statement()
