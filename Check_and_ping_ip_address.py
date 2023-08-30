@@ -17,6 +17,9 @@ def check_ip_address(ip_addrss):
         if len(octet_list)==4:
             valid_ip_address=check_address
             return valid_ip_address
+        else:
+            return None
+
 
 while True:
 
@@ -25,25 +28,28 @@ while True:
     if user_choice=="yes" or user_choice=="Y" or user_choice=="Yes":
 
 
-        if check_ip_address is not None:
-            pinging=check_ip_is_pinging(check_ip_address)
+        if check_ip_address(user_ip_address) is not None:
+
+
+            pinging=check_ip_is_pinging(check_ip_address(user_ip_address))
+
             if pinging:
                 fw=open(r"C:\Users\Thippeswamy U-3061\PycharmProjects\pythonProject\ramp_up_python\ip_address.txt","a")
-                fw.write("valid_ip_address: "+check_ip_address+"\n")
+                fw.write("valid_ip_address: "+check_ip_address(user_ip_address)+"\n")
             else:
                 fw = open(r"C:\Users\Thippeswamy U-3061\PycharmProjects\pythonProject\ramp_up_python\ip_address.txt", "a")
-                fw.write("In-valid_ip_address: " + check_ip_address + "\n")
+                fw.write("In-valid_ip_address: " + check_ip_address(user_ip_address) + "\n")
         else:
             fw = open(r"C:\Users\Thippeswamy U-3061\PycharmProjects\pythonProject\ramp_up_python\ip_address.txt", "a")
             fw.write("In-valid_ip_address: " +user_ip_address + "\n")
-    elif user_choice =="No" or user_choice=="N" or user_choice=="No":
+    elif user_choice =="no" or user_choice=="N" or user_choice=="No":
         fr = open(r"C:\Users\Thippeswamy U-3061\PycharmProjects\pythonProject\ramp_up_python\ip_address.txt", "r")
         print(fr.read())
 
-
-
-
-
-
-
-
+#
+#
+#
+#
+#
+#
+#

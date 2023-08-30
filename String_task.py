@@ -74,18 +74,20 @@ class String_Task():
 
 
 string_statemnt=input("enter statement")
-obj=String_Task(string_statemnt)
+string_statemnt1=input("enter statemnt1")
+full_statemnt=string_statemnt+" "+string_statemnt1
+obj=String_Task(full_statemnt)
 find_character_length=obj.find_out_number_of_characters_present_in_statement()
-#print(find_character_length[0])
+print(find_character_length[0])
 
 #find out duplicate characters present in statement
 
 duplicate_character_in_statement=obj.Findout_total_number_of_duplicate_Characters_in_the_statement()
-#print(duplicate_character_in_statement)
+print(duplicate_character_in_statement)
 
 #find out total words present in the given statement
 
-total_words_in_given_statement=obj.find_total_words_present_in_given_statement()
+#otal_words_in_given_statement=obj.find_total_words_present_in_given_statement()
 
 #find out duplicate words from given statement
 dupicate_words=obj.Find_duplicate_words_from_statement()
@@ -93,11 +95,11 @@ print(dupicate_words)
 
 #print(total_words_in_given_statement)
 #reverse the characters present in statement
-#reverse_the_characters=obj.revese_the_character_present_in_the_statement()
-#print(reverse_the_characters)
+reverse_the_characters=obj.revese_the_character_present_in_the_statement()
+print(reverse_the_characters)
 #reverser the words present in statement
-#reverse_the_words=obj.reverse_the_words_which_are_present_in_the_statement()
-#print("revese the words present in statement:-----  ",reverse_the_words)
+reverse_the_words=obj.reverse_the_words_which_are_present_in_the_statement()
+print("revese the words present in statement:-----  ",reverse_the_words)
 
 #form a new statement from existing statement which is have reverse words
 new_statement_with_rev_words=obj.Create_or_form_new_statement_from_existing_revese_words()
