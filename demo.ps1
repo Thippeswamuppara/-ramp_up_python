@@ -1,0 +1,1 @@
+﻿write-host "this is my first script"
