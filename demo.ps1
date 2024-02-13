@@ -1,1 +1,1 @@
-﻿write-host "this is my first script"
+New-Item -Path "C:\\Users\\tippu -Name "Powershell123"
