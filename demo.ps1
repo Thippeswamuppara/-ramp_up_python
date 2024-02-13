@@ -1,1 +1,1 @@
-New-Item -Path "C:\\Users\\tippu -Name "Powershell123"
+New-Item -path "C:\Users\tippu\Powershell123 -ItemType Directory
